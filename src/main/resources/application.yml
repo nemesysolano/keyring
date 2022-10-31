@@ -1,0 +1,15 @@
+
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: ${YAREAKH_DB_URL}
+    username: ${YAREAKH_DB_USER}
+    password: ${YAREAKH_DB_PASSWORD}
+  jpa:
+    show-sql: ${YAREAKH_DB_SHOWQSQL}
+
+hibernate:
+  dialect: org.hibernate.dialect.PostgreSQLDialect
+logging:
+  level:
+    com.yareakh.keyring.*: DEBUG
