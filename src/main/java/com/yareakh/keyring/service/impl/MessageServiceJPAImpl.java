@@ -109,6 +109,7 @@ public class MessageServiceJPAImpl implements MessageService {
         ) {
             throw new MessageServiceException(
                     CANT_CREATE_MESSAGE,
+                    cause,
                     MessageServiceException.UNHANDLED_CRYPTO_EXCEPTION
             );
         }
@@ -119,7 +120,6 @@ public class MessageServiceJPAImpl implements MessageService {
      */
     @Override
     public Message clear(Message message) {
-
         return message;
     }
 
@@ -127,8 +127,50 @@ public class MessageServiceJPAImpl implements MessageService {
      * {@inheritDoc}
      */
     @Override
-    public Message forward(Message message, KeyPair end) {
-        return null;
+    public Message forward(Message message, KeyPair next){
+        final String CANT_FORWARD_MESSAGE = "Can't forward message due to bad message state or crypto API.";
+        Triplet<Message, byte[], byte[]> triplet = content(message.id);
+        message = triplet.key;
+        byte[] aesKey = triplet.v2;
+        KeyPair start = message.end;
+        KeyPair end = keyPairService.findOrFail(next.id);
+
+        if(getMessageState(message) == MessageState.CLEAR) {
+            throw new MessageServiceException(
+                    CANT_FORWARD_MESSAGE,
+                    MessageServiceException.MESSAGE_HAS_BEEN_CLEARED
+            );
+        }
+
+        try {
+            // Generate RSA objects
+            X509EncodedKeySpec publicKeySpec = new X509EncodedKeySpec(end.publicKey);
+            KeyFactory rsaKeyFactory = KeyFactory.getInstance("RSA");
+            PublicKey publicKey = rsaKeyFactory.generatePublic(publicKeySpec);
+            Cipher rsaCipher = Cipher.getInstance("RSA");
+            rsaCipher.init(Cipher.ENCRYPT_MODE, publicKey);
+
+            // Encrypt  AES key
+            aesKey = rsaCipher.doFinal(aesKey);
+
+            return messageRepository.save(
+                    message.toBuilder()
+                            .aesKey(aesKey)
+                            .start(start)
+                            .end(end)
+                            .build()
+            );
+        } catch (
+                NoSuchAlgorithmException | InvalidKeySpecException | NoSuchPaddingException | InvalidKeyException |
+                IllegalBlockSizeException | BadPaddingException cause
+        ) {
+            throw new MessageServiceException(
+                    CANT_FORWARD_MESSAGE,
+                    cause,
+                    MessageServiceException.UNHANDLED_CRYPTO_EXCEPTION
+            );
+        }
+
     }
 
     /**
@@ -136,7 +178,7 @@ public class MessageServiceJPAImpl implements MessageService {
      */
     @Override
     public MessageState getMessageState(Message message) {
-        return null;
+        return message.clearanceDate == null ? MessageState.ONGOING : MessageState.CLEAR;
     }
 
     /**
@@ -179,9 +221,10 @@ public class MessageServiceJPAImpl implements MessageService {
             return new Triplet<>(message, aesCipher.doFinal(message.content), aesKey);
 
         } catch (BadPaddingException | IllegalBlockSizeException | NoSuchPaddingException | NoSuchAlgorithmException |
-                 InvalidKeySpecException | InvalidKeyException | InvalidAlgorithmParameterException e) {
+                 InvalidKeySpecException | InvalidKeyException | InvalidAlgorithmParameterException cause) {
             throw new MessageServiceException(
                     CANT_DECRYPT_MESSAGE,
+                    cause,
                     MessageServiceException.UNHANDLED_CRYPTO_EXCEPTION
             );
         }

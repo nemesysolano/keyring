@@ -14,6 +14,11 @@ public class MessageServiceException extends ServiceException{
      */
     public static final int UNHANDLED_CRYPTO_EXCEPTION = CONTENT_FIELD_TOO_SHORT - 1;
 
+    /**
+     * The message has been cleared and can't be forwarded.
+     */
+    public static final int MESSAGE_HAS_BEEN_CLEARED = UNHANDLED_CRYPTO_EXCEPTION - 1;
+
 
     /**
      * Use this constructor to wrap system exceptions
@@ -27,8 +32,8 @@ public class MessageServiceException extends ServiceException{
 
     /**
      *
-     * @param message
-     * @param code
+     * @param message -
+     * @param code -
      */
     public MessageServiceException(String message, int code) {
         super(message, code);

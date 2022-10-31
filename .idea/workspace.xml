@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61cdfff8-9843-4019-95ce-580debee34c0" name="Changes" comment="Changed return type to Triplet">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/model/Triplet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/model/Tuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceForwardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/model/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageServiceException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceCRUDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceCRUDTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +67,11 @@
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yareakh.keyring.service" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.MessageServiceCRUDTest">
+  <component name="RunManager" selected="JUnit.MessageServiceForwardTest">
     <configuration name="KeyPairServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="keyring" />
       <extension name="coverage">
@@ -108,6 +110,28 @@
         <env name="YAREAKH_DB_USER" value="localdb" />
         <env name="YAREAKH_DB_URL" value="jdbc:postgresql://localhost:5432/localdb" />
         <env name="YAREAKH_DB_SHOWQSQL" value="true" />
+        <env name="YAREAKH_DB_PASSWORD" value="vasorange#1" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageServiceForwardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="keyring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yareakh.keyring.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yareakh.keyring.service" />
+      <option name="MAIN_CLASS_NAME" value="com.yareakh.keyring.service.MessageServiceForwardTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="YAREAKH_DB_USER" value="localdb" />
+        <env name="YAREAKH_DB_URL" value="jdbc:postgresql://localhost:5432/localdb" />
+        <env name="YAREAKH_DB_SHOWQSQL" value="false" />
         <env name="YAREAKH_DB_PASSWORD" value="vasorange#1" />
       </envs>
       <method v="2">
@@ -167,6 +191,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.MessageServiceForwardTest" />
       <item itemvalue="JUnit.MessageServiceCRUDTest" />
       <item itemvalue="JUnit.KeyPairServiceTest" />
       <item itemvalue="Maven.keyring [spring-boot:run]" />
@@ -174,6 +199,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MessageServiceForwardTest" />
         <item itemvalue="JUnit.MessageServiceCRUDTest" />
         <item itemvalue="JUnit.KeyPairServiceTest" />
       </list>
@@ -201,8 +227,16 @@
       <workItem from="1666998146319" duration="2875000" />
       <workItem from="1667158021759" duration="22474000" />
       <workItem from="1667183836813" duration="261000" />
-      <workItem from="1667229154232" duration="3561000" />
+      <workItem from="1667229154232" duration="12084000" />
     </task>
+    <task id="LOCAL-00001" summary="Changed return type to Triplet">
+      <created>1667233943154</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667233943154</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +284,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceCRUDTest.java</url>
           <line>55</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceForwardTest.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

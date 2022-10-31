@@ -50,10 +50,12 @@ public interface MessageService {
     /**
      *
      * @param message An exiting message
-     * @param end Key pair belonging to the user that receives the message.
+     * @param next Receivers key pair
      * @return The same message whose <code>end</code> field set to <code>end</code> parameter.
+     * @throws com.yareakh.keyring.service.MessageServiceException When underlying crypto API fails.
+     * @throws com.yareakh.keyring.service.KeyPairServiceException When next key is invalid
      */
-    Message forward(Message message, KeyPair end);
+    Message forward(Message message, KeyPair next);
 
     /**
      *
