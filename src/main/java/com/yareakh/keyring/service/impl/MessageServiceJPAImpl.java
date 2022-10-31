@@ -120,7 +120,23 @@ public class MessageServiceJPAImpl implements MessageService {
      */
     @Override
     public Message clear(Message message) {
-        return message;
+        final String CANT_CLEAR_MESSAGE = "Can't clear message";
+        message = messageRepository.findById(message.id).orElseThrow(() ->
+                new MessageServiceException(
+                    CANT_CLEAR_MESSAGE,
+                    MessageServiceException.ENTITY_NOT_FOUND
+            ));
+
+        if(getMessageState(message) == MessageState.CLEAR) {
+            throw new MessageServiceException(
+                    CANT_CLEAR_MESSAGE,
+                    MessageServiceException.MESSAGE_HAS_BEEN_CLEARED
+            );
+        }
+
+        return messageRepository.save(
+          message.toBuilder().clearanceDate(new Date()).build()
+        );
     }
 
     /**

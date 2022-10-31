@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61cdfff8-9843-4019-95ce-580debee34c0" name="Changes" comment="Changed return type to Triplet">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceForwardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageServiceException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceForwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceForwardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +68,23 @@
       <recent name="com.yareakh.keyring.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MessageServiceForwardTest">
+  <component name="RunManager" selected="JUnit.All in keyring">
+    <configuration name="All in keyring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="keyring" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <envs>
+        <env name="YAREAKH_DB_USER" value="localdb" />
+        <env name="YAREAKH_DB_URL" value="jdbc:postgresql://localhost:5432/localdb" />
+        <env name="YAREAKH_DB_SHOWQSQL" value="false" />
+        <env name="YAREAKH_DB_PASSWORD" value="vasorange#1" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="KeyPairServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="keyring" />
       <extension name="coverage">
@@ -191,6 +204,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.All in keyring" />
       <item itemvalue="JUnit.MessageServiceForwardTest" />
       <item itemvalue="JUnit.MessageServiceCRUDTest" />
       <item itemvalue="JUnit.KeyPairServiceTest" />
@@ -199,6 +213,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in keyring" />
         <item itemvalue="JUnit.MessageServiceForwardTest" />
         <item itemvalue="JUnit.MessageServiceCRUDTest" />
         <item itemvalue="JUnit.KeyPairServiceTest" />
@@ -227,7 +242,7 @@
       <workItem from="1666998146319" duration="2875000" />
       <workItem from="1667158021759" duration="22474000" />
       <workItem from="1667183836813" duration="261000" />
-      <workItem from="1667229154232" duration="12084000" />
+      <workItem from="1667229154232" duration="14030000" />
     </task>
     <task id="LOCAL-00001" summary="Changed return type to Triplet">
       <created>1667233943154</created>
@@ -236,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667233943154</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed return type to Triplet">
+      <created>1667254554920</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667254554920</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,9 +308,9 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceForwardTest.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="22" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

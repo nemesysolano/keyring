@@ -16,6 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @Slf4j
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class MessageServiceForwardTest extends BaseServiceTest {
     @Autowired
     KeyPairService keyPairService;
@@ -51,7 +52,7 @@ class MessageServiceForwardTest extends BaseServiceTest {
 
     @Test
     @DisplayName("Messages can be created, forwarded, cleared and finally deleted.")
-
+    @Order(1)
     void testForward() {
         Iterator<Long> keyPairIdIterator = keyPairIds.iterator();
         KeyPair start = keyPairService.findOrFail(keyPairIdIterator.next());
@@ -67,6 +68,7 @@ class MessageServiceForwardTest extends BaseServiceTest {
                         end.name
                 )
         );
+
         while(keyPairIdIterator.hasNext()) {
             KeyPair next = keyPairService.findOrFail(keyPairIdIterator.next());
             message = messageService.forward(message, next);
@@ -78,6 +80,36 @@ class MessageServiceForwardTest extends BaseServiceTest {
             end = next;
         }
         assertNotNull(keyPairNames);
+    }
+
+    @Test
+    @DisplayName("Message can't be forwarded after it was cleared.")
+    @Order(2)
+    void testCannotForwardClearedMessage() {
+        KeyPair end = keyPairService.findOrFail(keyPairIds.iterator().next());
+        messageService.clear(message);
+
+        MessageServiceException exception = assertThrows(
+            MessageServiceException.class,
+            () -> messageService.forward(message, end)
+        );
+
+        assertEquals(MessageServiceException.MESSAGE_HAS_BEEN_CLEARED, exception.getCode());
+
+    }
+
+    @Test
+    @DisplayName("Message can be cleared only once.")
+    @Order(3)
+    void testCannotClearTwice() {
+
+        MessageServiceException exception = assertThrows(
+                MessageServiceException.class,
+                () -> messageService.clear(message)
+        );
+
+        assertEquals(MessageServiceException.MESSAGE_HAS_BEEN_CLEARED, exception.getCode());
+
     }
 
     @AfterAll
