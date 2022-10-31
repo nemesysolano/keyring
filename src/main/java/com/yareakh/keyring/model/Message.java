@@ -1,10 +1,6 @@
 package com.yareakh.keyring.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
-import lombok.AccessLevel;
+import lombok.*;
 import lombok.experimental.FieldNameConstants;
 import lombok.extern.jackson.Jacksonized;
 import org.hibernate.annotations.Type;
@@ -24,12 +20,14 @@ import java.util.Date;
 @FieldNameConstants
 @Entity
 @Table(name="MESSAGE")
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Message {
     /**
      * ID VARCHAR(72) NOT NULL
      */
     @Id
     @Column(name = "ID")
+    @EqualsAndHashCode.Include
     public final String id;
 
     /**
@@ -38,6 +36,7 @@ public class Message {
     @Lob
     @Column(name = "AES_KEY")
     @Type(type = "org.hibernate.type.BinaryType")
+    @EqualsAndHashCode.Include
     public final byte[] aesKey;
 
     /**
@@ -46,15 +45,17 @@ public class Message {
     @Lob
     @Column(name = "IV")
     @Type(type = "org.hibernate.type.BinaryType")
+    @EqualsAndHashCode.Include
     public final byte[] iv;
 
 
     /**
-     * CONTENT VARCHAR(512) NOT NULL;
+     * CONTENT BYTEA NOT NULL;
      */
     @Lob
     @Column(name = "CONTENT")
     @Type(type = "org.hibernate.type.BinaryType")
+    @EqualsAndHashCode.Include
     public final byte[]  content;
 
     /**
@@ -62,6 +63,7 @@ public class Message {
      */
     @ManyToOne()
     @JoinColumn(name="START_KEYPAIR_ID", referencedColumnName = "ID")
+    @ToString.Exclude
     public final KeyPair start;
 
     /**
@@ -69,6 +71,7 @@ public class Message {
      */
     @ManyToOne()
     @JoinColumn(name="END_KEYPAIR_ID", referencedColumnName = "ID")
+    @ToString.Exclude
     public final KeyPair end;
 
     /**

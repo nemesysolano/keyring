@@ -2,12 +2,10 @@ package com.yareakh.keyring.service;
 
 import com.yareakh.keyring.model.KeyPair;
 import com.yareakh.keyring.model.Message;
+import com.yareakh.keyring.model.Triplet;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -48,12 +46,15 @@ class MessageServiceCRUDTest extends BaseServiceTest {
     }
 
     @Test
+    @DisplayName("Messages can be created, encrypted, decrypted and finally deleted.")
     void testCRUD() {
         String content = RandomStringUtils.randomAlphanumeric(64);
         assertNotEquals(start.id, end.id);
         Message message = messageService.create(content, start, end);
         assertNotNull(message.id);
-        String decryptedContent = new String(messageService.content(message.id));
+        Triplet<Message, byte[], byte[]> triplet = messageService.content(message.id);
+        Message retrievedMessage = triplet.key;
+        String decryptedContent = new String(triplet.v1);
         assertEquals(content, decryptedContent);
 
         log.debug(String.format("original = %s", content));

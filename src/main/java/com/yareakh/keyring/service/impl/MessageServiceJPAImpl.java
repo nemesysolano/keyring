@@ -3,6 +3,7 @@ package com.yareakh.keyring.service.impl;
 import com.yareakh.keyring.model.KeyPair;
 import com.yareakh.keyring.model.Message;
 import com.yareakh.keyring.model.MessageState;
+import com.yareakh.keyring.model.Triplet;
 import com.yareakh.keyring.repository.MessageRepository;
 import com.yareakh.keyring.service.*;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -150,7 +151,7 @@ public class MessageServiceJPAImpl implements MessageService {
      * {@inheritDoc}
      */
     @Override
-    public byte[] content(String id) {
+    public Triplet<Message, byte[], byte[]> content(String id) {
         final String CANT_DECRYPT_MESSAGE = "Can't decrypt message due to non-handled exception";
         Message message = messageRepository.findById(id).orElseThrow( () ->
                 new MessageServiceException(
@@ -170,12 +171,12 @@ public class MessageServiceJPAImpl implements MessageService {
 
             // Generate AES objects
             Cipher aesCipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
-            byte[] aesSecretKeyBytes = rsaCipher.doFinal(message.aesKey);
-            SecretKey aesSecretKey = new SecretKeySpec(aesSecretKeyBytes, "AES");
+            byte[] aesKey = rsaCipher.doFinal(message.aesKey);
+            SecretKey aesSecretKey = new SecretKeySpec(aesKey, "AES");
             aesCipher.init(Cipher.DECRYPT_MODE, aesSecretKey, new IvParameterSpec(message.iv));
 
             // Decrypts message
-            return aesCipher.doFinal(message.content);
+            return new Triplet<>(message, aesCipher.doFinal(message.content), aesKey);
 
         } catch (BadPaddingException | IllegalBlockSizeException | NoSuchPaddingException | NoSuchAlgorithmException |
                  InvalidKeySpecException | InvalidKeyException | InvalidAlgorithmParameterException e) {

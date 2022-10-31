@@ -4,42 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61cdfff8-9843-4019-95ce-580debee34c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/model/KeyPair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/model/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/model/MessageState.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/repository/KeyPairRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/repository/MessageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/KeyPairService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/KeyPairServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/KeyPairServiceJPAImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0001___INITIAL_SETUP.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0002___CREATE_MESSAGE_TABLE.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0003___ADD_HASH_COLUMN.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0004___REFACTOR_END_KEY_PAIR.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0005___RENAME_HASH_COLUMN.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0006___ADD_AES_KEY_COLUMN.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0007___ADD_IV_COLUMN.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0008___CHANGE_CONTENT_TYPE.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/BaseServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/KeyPairServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceCRUDTest.java" afterDir="false" />
+    <list default="true" id="61cdfff8-9843-4019-95ce-580debee34c0" name="Changes" comment="Changed return type to Triplet">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/model/Triplet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/model/Tuple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/model/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceCRUDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceCRUDTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +199,9 @@
       <workItem from="1666923022721" duration="1169000" />
       <workItem from="1666992353111" duration="4935000" />
       <workItem from="1666998146319" duration="2875000" />
-      <workItem from="1667158021759" duration="16366000" />
+      <workItem from="1667158021759" duration="22474000" />
+      <workItem from="1667183836813" duration="261000" />
+      <workItem from="1667229154232" duration="3561000" />
     </task>
     <servers />
   </component>
@@ -245,6 +219,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed return type to Triplet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed return type to Triplet" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -259,24 +237,19 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/KeyPairServiceJPAImpl.java</url>
           <line>48</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java</url>
-          <line>106</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceCRUDTest.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceCRUDTest.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="19" />
+          <line>55</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

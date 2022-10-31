@@ -3,9 +3,9 @@ package com.yareakh.keyring.service;
 import com.yareakh.keyring.model.KeyPair;
 import com.yareakh.keyring.model.Message;
 import com.yareakh.keyring.model.MessageState;
+import com.yareakh.keyring.model.Triplet;
 
 import javax.crypto.spec.IvParameterSpec;
-import java.security.SecureRandom;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
@@ -20,12 +20,12 @@ public interface MessageService {
     /**
      * Default key length for AES encryption.
      */
-    public static final int AES_KEY_LENGTH = 32;
+    int AES_KEY_LENGTH = 32;
 
     /**
      * Default IV length.
      */
-    public static final int IV_LENGTH = 16;
+    int IV_LENGTH = 16;
 
     /**
      * <p>Creates a new message.</p>
@@ -34,8 +34,8 @@ public interface MessageService {
      * @param start Key pair belonging to the sender
      * @param end Key pair belonging to the receiver
      * @return A new message.
-     * @throws com.yareakh.keyring.service.MessageServiceException
-     * @throws com.yareakh.keyring.service.KeyPairServiceException
+     * @throws com.yareakh.keyring.service.MessageServiceException When underlying crypto API fails or message is clear.
+     * @throws com.yareakh.keyring.service.KeyPairServiceException When start or end key
      */
     Message create(String content, KeyPair start, KeyPair end);
 
@@ -58,7 +58,7 @@ public interface MessageService {
     /**
      *
      * @param message An existing message
-     * @return ONGONG or CLEAR
+     * @return ONGOING or CLEAR
      */
     MessageState getMessageState(Message message);
 
@@ -73,16 +73,16 @@ public interface MessageService {
      * <p>Returns message content as a string.</p>
      * <p>Used only for unit tests. Do not expose this method in controllers.</p>
      * @param id Message id
-     * @return byte[]
-     * @throws com.yareakh.keyring.service.MessageServiceException
+     * @return Triplet &lt;Message, content, aesKey&gt;
+     * @throws com.yareakh.keyring.service.MessageServiceException When underlying crypto API fails.
      */
-    byte[]  content(String id);
+    Triplet<Message, byte[], byte[]> content(String id);
 
     /**
      * Creates a new initialization vector
      * @return A new instance of <code>javax.crypto.spec.IvParameterSpec</code>.
      */
-    public static IvParameterSpec generateIv() {
+    static IvParameterSpec generateIv() {
         byte[] iv = new byte[IV_LENGTH];
         ThreadLocalRandom.current().nextBytes(iv);
         return new IvParameterSpec(iv);
