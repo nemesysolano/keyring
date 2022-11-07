@@ -53,7 +53,6 @@ class MessageServiceCRUDTest extends BaseServiceTest {
         Message message = messageService.create(content, start, end);
         assertNotNull(message.id);
         Triplet<Message, byte[], byte[]> triplet = messageService.content(message.id);
-        Message retrievedMessage = triplet.key;
         String decryptedContent = new String(triplet.v1);
         assertEquals(content, decryptedContent);
 
@@ -61,6 +60,7 @@ class MessageServiceCRUDTest extends BaseServiceTest {
         log.debug(String.format("decrypted= %s", decryptedContent));
         messageService.delete(message.id);
     }
+
 
     @AfterAll
     public void cleanup() {

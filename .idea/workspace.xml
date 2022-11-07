@@ -4,27 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61cdfff8-9843-4019-95ce-580debee34c0" name="Changes" comment="Changed return type to Triplet">
+    <list default="true" id="61cdfff8-9843-4019-95ce-580debee34c0" name="Changes" comment="Done with validation tests.">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/AESCipher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/CryptoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/RSACipher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/AESCipherImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/CryptoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/RSACipherImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/KeyPairServiceExceptionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/KeyPairServiceJPAImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/KeyPairServiceJPAImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceForwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceForwardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/BaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/BaseServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/KeyPairServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/KeyPairServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceCRUDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceCRUDTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/coverage" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Kotlin Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -35,28 +65,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;d2c899bd-05d1-4321-9109-38452f20f49a&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_directory_selection&quot;: &quot;/home/rafaelsolanomartinez/workspaces/yareakh/keyring/src/main/java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;db97947680583bc7a41a7dbed02b2790&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JPA.DatabaseSchemaImportDialog": "d2c899bd-05d1-4321-9109-38452f20f49a",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "/home/rafaelsolanomartinez/workspaces/yareakh/keyring/src/main/java",
+    "last_opened_file_path": "/home/rafaelsolanomartinez/workspaces/yareakh/keyring/coverage",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "db97947680583bc7a41a7dbed02b2790"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/db/migration" />
@@ -89,7 +120,7 @@
       <module name="keyring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yareakh.keyring.service.*" />
+          <option name="PATTERN" value="com.yareakh.keyring.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,7 +142,7 @@
       <module name="keyring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yareakh.keyring.service.*" />
+          <option name="PATTERN" value="com.yareakh.keyring.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,7 +164,7 @@
       <module name="keyring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yareakh.keyring.service.*" />
+          <option name="PATTERN" value="com.yareakh.keyring.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -242,7 +273,11 @@
       <workItem from="1666998146319" duration="2875000" />
       <workItem from="1667158021759" duration="22474000" />
       <workItem from="1667183836813" duration="261000" />
-      <workItem from="1667229154232" duration="14030000" />
+      <workItem from="1667229154232" duration="14322000" />
+      <workItem from="1667303753555" duration="2998000" />
+      <workItem from="1667332677079" duration="4262000" />
+      <workItem from="1667418495568" duration="77000" />
+      <workItem from="1667784475724" duration="4733000" />
     </task>
     <task id="LOCAL-00001" summary="Changed return type to Triplet">
       <created>1667233943154</created>
@@ -258,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667254554920</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Done with validation tests.">
+      <created>1667256737397</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667256737397</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,40 +319,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed return type to Triplet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed return type to Triplet" />
+    <MESSAGE value="Done with validation tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Done with validation tests." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/KeyPairServiceTest.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/yareakh/keyring/model/KeyPair.java</url>
           <line>23</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/KeyPairServiceJPAImpl.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageServiceException.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceCRUDTest.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceCRUDTest.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java</url>
-          <line>122</line>
-          <option name="timeStamp" value="23" />
+          <url>file://$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/KeyPairServiceExceptionsTest.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -323,5 +351,6 @@
     <SUITE FILE_PATH="coverage/keyring$KeyPairServiceTest.ic" NAME="KeyPairServiceTest Coverage Results" MODIFIED="1666325695309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.yareakh.keyring.service.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/keyring$All_in_keyring.ic" NAME="All in keyring Coverage Results" MODIFIED="1667788680812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

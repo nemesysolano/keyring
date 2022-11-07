@@ -5,6 +5,7 @@ import com.yareakh.keyring.repository.KeyPairRepository;
 import com.yareakh.keyring.service.BaseService;
 import com.yareakh.keyring.service.KeyPairService;
 import com.yareakh.keyring.service.KeyPairServiceException;
+import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 
 import java.security.KeyPairGenerator;
@@ -70,7 +71,7 @@ public class KeyPairServiceJPAImpl implements KeyPairService {
             );
 
             return newKeyPair.id;
-        } catch (NoSuchAlgorithmException cause) {
+        } catch (NoSuchAlgorithmException | DataAccessException cause) {
             throw new KeyPairServiceException(
                     "Unhandled crypto exception",
                     cause,
