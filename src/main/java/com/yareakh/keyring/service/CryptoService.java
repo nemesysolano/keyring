@@ -51,7 +51,7 @@ public interface CryptoService {
      * @throws InvalidAlgorithmParameterException .-
      * @throws InvalidKeyException .-
      */
-    public AESCipher createAESCipherForEncryption(byte[] aesKeyData) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException, InvalidKeyException;
+    AESCipher createAESCipherForEncryption(byte[] aesKeyData) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException, InvalidKeyException;
 
     /**
      * <p>Creates an AES cipher for decryption.</p>
@@ -63,5 +63,5 @@ public interface CryptoService {
      * @throws InvalidAlgorithmParameterException .-
      * @throws InvalidKeyException .-
      */
-    public AESCipher createAESCipherForDecryption(byte[] aesKeyData, byte[] ivData) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException, InvalidKeyException;
+    AESCipher createAESCipherForDecryption(byte[] aesKeyData, byte[] ivData) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException, InvalidKeyException;
 }

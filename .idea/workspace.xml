@@ -5,23 +5,98 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61cdfff8-9843-4019-95ce-580debee34c0" name="Changes" comment="Done with validation tests.">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/AESCipher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/CryptoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/RSACipher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/AESCipherImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/CryptoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/RSACipherImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/KeyPairServiceExceptionsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/css/coverage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/css/idea.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/img/arrowDown.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/img/arrowUp.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_BLOCK.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_CLASS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_LINE.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_LINE_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_METHOD.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_NAME_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/js/highlight.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/js/highlightjs-line-numbers.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_BLOCK.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_CLASS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_LINE.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_LINE_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_METHOD.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_NAME_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-1/sources/source-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_BLOCK.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_CLASS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_LINE.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_LINE_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_METHOD.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_NAME_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-2/sources/source-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-2/sources/source-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-2/sources/source-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-2/sources/source-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-2/sources/source-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_BLOCK.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_CLASS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_LINE.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_LINE_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_METHOD.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_NAME_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_BLOCK.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_CLASS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_LINE.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_LINE_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_METHOD.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_NAME_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-4/sources/source-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-4/sources/source-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-4/sources/source-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-4/sources/source-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-4/sources/source-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_BLOCK.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_CLASS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_LINE.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_LINE_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_METHOD.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_NAME_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-5/sources/source-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage/ns-5/sources/source-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/KeyPairServiceJPAImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/KeyPairServiceJPAImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/BaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/BaseServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/KeyPairServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/KeyPairServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceCRUDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceCRUDTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/CryptoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/CryptoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +352,7 @@
       <workItem from="1667303753555" duration="2998000" />
       <workItem from="1667332677079" duration="4262000" />
       <workItem from="1667418495568" duration="77000" />
-      <workItem from="1667784475724" duration="4733000" />
+      <workItem from="1667784475724" duration="4868000" />
     </task>
     <task id="LOCAL-00001" summary="Changed return type to Triplet">
       <created>1667233943154</created>
@@ -300,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667256737397</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Done with validation tests.">
+      <created>1667789220549</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667789220549</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
