@@ -1,6 +1,7 @@
 package com.yareakh.keyring.service;
 
 import com.yareakh.keyring.Main;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest(classes = Main.class)
 @WebAppConfiguration
 @TestConfiguration
+@Slf4j
 class BaseServiceTest {
 
     @Test
@@ -25,5 +27,7 @@ class BaseServiceTest {
 
         assertNotNull(BaseService.toString(number));
         assertTrue(BaseService.toString(number).length() > 0);
+
+        log.debug(BaseServiceTest.class.getSimpleName());
     }
 }

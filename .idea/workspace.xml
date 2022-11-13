@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61cdfff8-9843-4019-95ce-580debee34c0" name="Changes" comment="Done with validation tests.">
-      <change afterPath="$PROJECT_DIR$/scratchpad.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/ErrorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/SignUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/dto/SignupRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/dto/SignupResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/controller/BaseControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/controller/MockClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/controller/RegistrationControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/ServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/BaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/BaseServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +49,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2GNkqpMuhhWCIwkvpCsNqtuFYxi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -102,7 +97,7 @@
       <recent name="com.yareakh.keyring.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RegistrationControllerTest">
+  <component name="RunManager" selected="JUnit.All in keyring">
     <configuration name="All in keyring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="keyring" />
       <option name="PACKAGE_NAME" value="" />
@@ -119,22 +114,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KeyPairServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="keyring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yareakh.keyring.service.impl.*" />
+          <option name="PATTERN" value="com.yareakh.keyring.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.yareakh.keyring.service" />
-      <option name="MAIN_CLASS_NAME" value="com.yareakh.keyring.service.KeyPairServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.yareakh.keyring.service.BaseServiceTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <envs>
         <env name="YAREAKH_DB_USER" value="localdb" />
         <env name="YAREAKH_DB_URL" value="jdbc:postgresql://localhost:5432/localdb" />
-        <env name="YAREAKH_DB_SHOWQSQL" value="true" />
+        <env name="YAREAKH_DB_SHOWQSQL" value="false" />
         <env name="YAREAKH_DB_PASSWORD" value="vasorange#1" />
       </envs>
       <method v="2">
@@ -260,21 +255,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.BaseServiceTest" />
       <item itemvalue="JUnit.RegistrationControllerTest" />
       <item itemvalue="JUnit.All in keyring" />
       <item itemvalue="JUnit.MessageServiceForwardTest" />
       <item itemvalue="JUnit.MessageServiceCRUDTest" />
-      <item itemvalue="JUnit.KeyPairServiceTest" />
       <item itemvalue="Maven.keyring [spring-boot:run]" />
       <item itemvalue="Spring Boot.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RegistrationControllerTest" />
         <item itemvalue="JUnit.All in keyring" />
+        <item itemvalue="JUnit.BaseServiceTest" />
+        <item itemvalue="JUnit.RegistrationControllerTest" />
         <item itemvalue="JUnit.MessageServiceForwardTest" />
         <item itemvalue="JUnit.MessageServiceCRUDTest" />
-        <item itemvalue="JUnit.KeyPairServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -310,7 +305,9 @@
       <workItem from="1667958738923" duration="23000" />
       <workItem from="1668135990868" duration="3366000" />
       <workItem from="1668170489996" duration="3183000" />
-      <workItem from="1668302955279" duration="592000" />
+      <workItem from="1668302955279" duration="2217000" />
+      <workItem from="1668305193171" duration="2013000" />
+      <workItem from="1668343053179" duration="3806000" />
     </task>
     <task id="LOCAL-00001" summary="Changed return type to Triplet">
       <created>1667233943154</created>
@@ -393,6 +390,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/KeyPairServiceExceptionsTest.java</url>
           <line>33</line>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/BaseServiceTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
