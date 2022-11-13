@@ -28,4 +28,9 @@ public class ErrorResponse {
      *
      */
     public final int code;
+
+    /**
+     *
+     */
+    public final String cause;
 }

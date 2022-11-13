@@ -27,9 +27,9 @@ public class KeyPairServiceException extends ServiceException{
     public static final int KEYPAIR_DOES_NOT_EXISTS = UNHANDLED_CRYPTO_EXCEPTION - 1;
 
     /**
-     * Key pair is referenced by other messages.
+     * Can't perform CRUD operations
      */
-    public static final int REFERENCED_BY_OTHER_ENTITIES = KEYPAIR_DOES_NOT_EXISTS - 1;
+    public static final int DATA_ACCESS_PROBLEM = KEYPAIR_DOES_NOT_EXISTS - 1;
 
 
     /**

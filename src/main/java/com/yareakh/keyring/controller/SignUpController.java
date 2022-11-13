@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.*;
         RequestMethod.OPTIONS,
         RequestMethod.HEAD
 })
-public class SignUp {
+public class SignUpController {
     /**
      * Key pair service used to create new key pairs.
      */
@@ -31,7 +31,7 @@ public class SignUp {
      *
      * @param keyPairService Key pair service used to create new key pairs.
      */
-    public SignUp(KeyPairService keyPairService) {
+    public SignUpController(KeyPairService keyPairService) {
         this.keyPairService = keyPairService;
     }
 

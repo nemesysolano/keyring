@@ -1,0 +1,1 @@
+INSERT INTO ROLE (NAME, DESCRIPTION) values ('guest', 'Guest');

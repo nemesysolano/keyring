@@ -5,11 +5,12 @@ import com.yareakh.keyring.repository.KeyPairRepository;
 import com.yareakh.keyring.service.BaseService;
 import com.yareakh.keyring.service.KeyPairService;
 import com.yareakh.keyring.service.KeyPairServiceException;
+import com.yareakh.keyring.service.WrappedCheckedException;
+import com.yareakh.keyring.stubs.KeyPairGeneratorStub;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 
 import java.security.KeyPairGenerator;
-import java.security.NoSuchAlgorithmException;
 import java.util.List;
 import java.util.Optional;
 import java.util.regex.Pattern;
@@ -30,12 +31,19 @@ public class KeyPairServiceJPAImpl implements KeyPairService {
 
     protected KeyPairRepository keyPairRepository;
 
+    protected KeyPairGeneratorStub keyPairGeneratorStub;
+
     /**
      * <p>Initializes protected fields whose names match parameters'.</p>
      * @param keyPairRepository Repository for CRUD Operations on KEY_PAIR table.
+     * @param keyPairGeneratorStub Stub service for <code>KeyPairGenerator</code> methods.
      */
-    public KeyPairServiceJPAImpl(KeyPairRepository keyPairRepository) {
+    public KeyPairServiceJPAImpl(
+            KeyPairRepository keyPairRepository,
+            KeyPairGeneratorStub keyPairGeneratorStub
+    ) {
         this.keyPairRepository = keyPairRepository;
+        this.keyPairGeneratorStub = keyPairGeneratorStub;
     }
 
     /**
@@ -55,7 +63,7 @@ public class KeyPairServiceJPAImpl implements KeyPairService {
         }
 
         try {
-            KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("RSA");
+            KeyPairGenerator keyPairGenerator = keyPairGeneratorStub.getInstance("RSA");
             keyPairGenerator.initialize(2048);
 
             java.security.KeyPair securityKeyPair = keyPairGenerator.generateKeyPair();
@@ -71,11 +79,17 @@ public class KeyPairServiceJPAImpl implements KeyPairService {
             );
 
             return newKeyPair.id;
-        } catch (NoSuchAlgorithmException | DataAccessException cause) {
+        } catch (WrappedCheckedException cause) {
             throw new KeyPairServiceException(
                     "Unhandled crypto exception",
                     cause,
                     KeyPairServiceException.UNHANDLED_CRYPTO_EXCEPTION
+            );
+        }catch (DataAccessException cause) {
+            throw new KeyPairServiceException(
+                    "Unhandled Data access exception",
+                    cause,
+                    KeyPairServiceException.DATA_ACCESS_PROBLEM
             );
         }
     }
