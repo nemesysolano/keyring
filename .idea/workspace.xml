@@ -5,98 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61cdfff8-9843-4019-95ce-580debee34c0" name="Changes" comment="Done with validation tests.">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/css/coverage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/css/idea.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/img/arrowDown.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/img/arrowUp.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_BLOCK.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_CLASS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_LINE.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_LINE_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_METHOD.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/index_SORT_BY_NAME_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/js/highlight.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/js/highlightjs-line-numbers.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_BLOCK.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_CLASS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_LINE.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_LINE_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_METHOD.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-1/index_SORT_BY_NAME_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-1/sources/source-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_BLOCK.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_CLASS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_LINE.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_LINE_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_METHOD.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-2/index_SORT_BY_NAME_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-2/sources/source-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-2/sources/source-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-2/sources/source-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-2/sources/source-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-2/sources/source-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_BLOCK.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_CLASS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_LINE.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_LINE_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_METHOD.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/index_SORT_BY_NAME_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-3/sources/source-9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_BLOCK.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_CLASS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_LINE.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_LINE_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_METHOD.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-4/index_SORT_BY_NAME_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-4/sources/source-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-4/sources/source-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-4/sources/source-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-4/sources/source-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-4/sources/source-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_BLOCK.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_CLASS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_LINE.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_LINE_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_METHOD.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-5/index_SORT_BY_NAME_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-5/sources/source-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coverage/ns-5/sources/source-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratchpad.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/ErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/SignUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/dto/SignupRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/dto/SignupResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/controller/BaseControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/controller/MockClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/controller/RegistrationControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/CryptoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/CryptoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/ServiceException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,11 +42,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
@@ -140,41 +64,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JPA.DatabaseSchemaImportDialog": "d2c899bd-05d1-4321-9109-38452f20f49a",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_directory_selection": "/home/rafaelsolanomartinez/workspaces/yareakh/keyring/src/main/java",
-    "last_opened_file_path": "/home/rafaelsolanomartinez/workspaces/yareakh/keyring/coverage",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "db97947680583bc7a41a7dbed02b2790"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;d2c899bd-05d1-4321-9109-38452f20f49a&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/rafaelsolanomartinez/workspaces/yareakh/keyring/src/main/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/rafaelsolanomartinez/workspaces/jadee/form-reader/Development/reader&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;db97947680583bc7a41a7dbed02b2790&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/db/migration" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.yareakh.keyring.controller" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yareakh.keyring.controller" />
       <recent name="com.yareakh.keyring.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in keyring">
+  <component name="RunManager" selected="JUnit.RegistrationControllerTest">
     <configuration name="All in keyring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="keyring" />
       <option name="PACKAGE_NAME" value="" />
@@ -257,6 +185,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegistrationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="keyring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yareakh.keyring.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yareakh.keyring.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.yareakh.keyring.controller.RegistrationControllerTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="YAREAKH_DB_USER" value="localdb" />
+        <env name="YAREAKH_DB_URL" value="jdbc:postgresql://localhost:5432/localdb" />
+        <env name="YAREAKH_DB_SHOWQSQL" value="true" />
+        <env name="YAREAKH_DB_PASSWORD" value="vasorange#1" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="keyring [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -310,6 +260,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.RegistrationControllerTest" />
       <item itemvalue="JUnit.All in keyring" />
       <item itemvalue="JUnit.MessageServiceForwardTest" />
       <item itemvalue="JUnit.MessageServiceCRUDTest" />
@@ -319,6 +270,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RegistrationControllerTest" />
         <item itemvalue="JUnit.All in keyring" />
         <item itemvalue="JUnit.MessageServiceForwardTest" />
         <item itemvalue="JUnit.MessageServiceCRUDTest" />
@@ -352,7 +304,13 @@
       <workItem from="1667303753555" duration="2998000" />
       <workItem from="1667332677079" duration="4262000" />
       <workItem from="1667418495568" duration="77000" />
-      <workItem from="1667784475724" duration="4868000" />
+      <workItem from="1667784475724" duration="5021000" />
+      <workItem from="1667790541975" duration="145000" />
+      <workItem from="1667958721599" duration="5000" />
+      <workItem from="1667958738923" duration="23000" />
+      <workItem from="1668135990868" duration="3366000" />
+      <workItem from="1668170489996" duration="3183000" />
+      <workItem from="1668302955279" duration="592000" />
     </task>
     <task id="LOCAL-00001" summary="Changed return type to Triplet">
       <created>1667233943154</created>
@@ -382,7 +340,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667789220549</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Done with validation tests.">
+      <created>1667789364890</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667789364890</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Done with validation tests.">
+      <created>1667789376994</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667789376994</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
