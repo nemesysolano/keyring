@@ -5,13 +5,18 @@ import com.yareakh.keyring.model.Message;
 import com.yareakh.keyring.model.MessageState;
 import com.yareakh.keyring.model.Triplet;
 import com.yareakh.keyring.repository.MessageRepository;
-import com.yareakh.keyring.service.*;
+import com.yareakh.keyring.service.BaseService;
+import com.yareakh.keyring.service.MessageService;
+import com.yareakh.keyring.service.KeyPairService;
+import com.yareakh.keyring.service.CryptoService;
+import com.yareakh.keyring.service.RSACipher;
+import com.yareakh.keyring.service.AESCipher;
+import com.yareakh.keyring.service.ServiceException;
+import com.yareakh.keyring.service.MessageServiceException;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Service;
 
-import javax.crypto.*;
-import java.security.*;
-import java.security.spec.InvalidKeySpecException;
+import java.security.GeneralSecurityException;
 import java.util.Date;
 import java.util.Objects;
 import java.util.UUID;
@@ -102,9 +107,7 @@ public class MessageServiceJPAImpl implements MessageService {
                             .content(cipherContent)
                             .build()
             );
-        } catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException | IllegalBlockSizeException |
-                 BadPaddingException | InvalidKeySpecException | InvalidAlgorithmParameterException cause
-        ) {
+        } catch (GeneralSecurityException cause) {
             throw new MessageServiceException(
                     CANT_CREATE_MESSAGE,
                     cause,
@@ -170,10 +173,7 @@ public class MessageServiceJPAImpl implements MessageService {
                             .end(end)
                             .build()
             );
-        } catch (
-                NoSuchAlgorithmException | InvalidKeySpecException | NoSuchPaddingException | InvalidKeyException |
-                IllegalBlockSizeException | BadPaddingException cause
-        ) {
+        } catch (GeneralSecurityException cause) {
             throw new MessageServiceException(
                     CANT_FORWARD_MESSAGE,
                     cause,
@@ -225,8 +225,7 @@ public class MessageServiceJPAImpl implements MessageService {
             // Decrypts message
             return new Triplet<>(message, aesCipher.transform(message.content), aesKey);
 
-        } catch (BadPaddingException | IllegalBlockSizeException | NoSuchPaddingException | NoSuchAlgorithmException |
-                 InvalidKeySpecException | InvalidKeyException | InvalidAlgorithmParameterException cause) {
+        } catch (GeneralSecurityException cause) {
             throw new MessageServiceException(
                     CANT_DECRYPT_MESSAGE,
                     cause,
