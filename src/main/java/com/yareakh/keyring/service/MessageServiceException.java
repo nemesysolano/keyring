@@ -19,6 +19,10 @@ public class MessageServiceException extends ServiceException{
      */
     public static final int MESSAGE_HAS_BEEN_CLEARED = UNHANDLED_CRYPTO_EXCEPTION - 1;
 
+    /**
+     * Can't persist new message.
+     */
+    public static final int DATA_ACCESS_PROBLEM = MESSAGE_HAS_BEEN_CLEARED - 1;
 
     /**
      * Use this constructor to wrap system exceptions

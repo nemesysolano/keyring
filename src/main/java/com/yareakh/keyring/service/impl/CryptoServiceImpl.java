@@ -26,7 +26,7 @@ public class CryptoServiceImpl implements CryptoService {
 
     /**
      *
-     * @param keyFactoryStub
+     * @param keyFactoryStub stub for <code>java.security.KeyFactory</code>
      */
     public CryptoServiceImpl(KeyFactoryStub keyFactoryStub, CipherStub cipherStub) {
         this.keyFactoryStub = keyFactoryStub;
@@ -37,7 +37,7 @@ public class CryptoServiceImpl implements CryptoService {
      * {@inheritDoc}
      */
     @Override
-    public RSACipherImpl createRSACipherForEncryption(final byte[] publicKeyData) throws WrappedCheckedException {
+    public RSACipher createRSACipherForEncryption(final byte[] publicKeyData) throws WrappedCheckedException {
         try {
             KeyFactory rsaKeyFactory = keyFactoryStub.getInstance(RSA_ALGORITHM);
             X509EncodedKeySpec publicKeySpec = new X509EncodedKeySpec(publicKeyData);

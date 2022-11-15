@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61cdfff8-9843-4019-95ce-580debee34c0" name="Changes" comment="Done with validation tests.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/CryptoServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/stubs/CipherStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/stubs/CipherStubImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/stubs/KeyFactoryStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/stubs/KeyfactoryStubimpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/CryptoServiceResilienceTest.java" afterDir="false" />
+    <list default="true" id="61cdfff8-9843-4019-95ce-580debee34c0" name="Changes" comment="Fully covered MessageService">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/MockDataAccessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceResilienceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/CryptoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/CryptoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/AESCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/AESCipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/RSACipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/RSACipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/AESCipherImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/AESCipherImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/CryptoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/CryptoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/RSACipherImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/RSACipherImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +187,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KeyPairServiceResilienceTest.testCatchWrappedCheckedException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MessageServiceResilienceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="keyring" />
       <extension name="coverage">
         <pattern>
@@ -196,9 +196,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.yareakh.keyring.service" />
-      <option name="MAIN_CLASS_NAME" value="com.yareakh.keyring.service.KeyPairServiceResilienceTest" />
-      <option name="METHOD_NAME" value="testCatchWrappedCheckedException" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.yareakh.keyring.service.MessageServiceResilienceTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <envs>
         <env name="YAREAKH_DB_USER" value="localdb" />
         <env name="YAREAKH_DB_URL" value="jdbc:postgresql://localhost:5432/localdb" />
@@ -262,9 +262,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.MessageServiceResilienceTest" />
       <item itemvalue="JUnit.CryptoServiceResilienceTest" />
       <item itemvalue="JUnit.KeyPairServiceResilienceTest.testCatchDataAccessException" />
-      <item itemvalue="JUnit.KeyPairServiceResilienceTest.testCatchWrappedCheckedException" />
       <item itemvalue="JUnit.KeyPairServiceResilienceTest" />
       <item itemvalue="JUnit.All in keyring" />
       <item itemvalue="Maven.keyring [spring-boot:run]" />
@@ -273,10 +273,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in keyring" />
+        <item itemvalue="JUnit.MessageServiceResilienceTest" />
         <item itemvalue="JUnit.CryptoServiceResilienceTest" />
         <item itemvalue="JUnit.KeyPairServiceResilienceTest" />
         <item itemvalue="JUnit.KeyPairServiceResilienceTest.testCatchDataAccessException" />
-        <item itemvalue="JUnit.KeyPairServiceResilienceTest.testCatchWrappedCheckedException" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +316,8 @@
       <workItem from="1668305193171" duration="2013000" />
       <workItem from="1668343053179" duration="11714000" />
       <workItem from="1668363223430" duration="1144000" />
-      <workItem from="1668449230150" duration="4599000" />
+      <workItem from="1668449230150" duration="11939000" />
+      <workItem from="1668523902799" duration="8428000" />
     </task>
     <task id="LOCAL-00001" summary="Changed return type to Triplet">
       <created>1667233943154</created>
@@ -380,7 +381,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed return type to Triplet" />
     <MESSAGE value="Done with validation tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Done with validation tests." />
+    <MESSAGE value="Fully covered MessageService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fully covered MessageService" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -389,11 +391,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/yareakh/keyring/model/KeyPair.java</url>
           <line>23</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageServiceException.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/KeyPairServiceJPAImpl.java</url>
@@ -412,8 +409,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/KeyPairServiceJPAImpl.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="30" />
+          <line>57</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -426,6 +428,6 @@
     <SUITE FILE_PATH="coverage/keyring$KeyPairServiceTest.ic" NAME="KeyPairServiceTest Coverage Results" MODIFIED="1666325695309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.yareakh.keyring.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/keyring$All_in_keyring.ic" NAME="All in keyring Coverage Results" MODIFIED="1668453857427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/keyring$All_in_keyring.ic" NAME="All in keyring Coverage Results" MODIFIED="1668532689975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

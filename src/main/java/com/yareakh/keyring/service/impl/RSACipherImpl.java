@@ -2,9 +2,8 @@ package com.yareakh.keyring.service.impl;
 
 import com.yareakh.keyring.service.RSACipher;
 
-import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
-import javax.crypto.IllegalBlockSizeException;
+import java.security.GeneralSecurityException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 
@@ -54,7 +53,7 @@ public class RSACipherImpl implements RSACipher {
      * @param input non-null/empty array of bytes
      * @return Transformed version (decrypted/encrypted) of <code>input</code>.
      */
-    public byte[] transform(byte[] input) throws IllegalBlockSizeException, BadPaddingException {
+    public byte[] transform(byte[] input) throws GeneralSecurityException {
         return cipher.doFinal(input);
     }
 }

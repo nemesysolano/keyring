@@ -2,11 +2,10 @@ package com.yareakh.keyring.service.impl;
 
 import com.yareakh.keyring.service.AESCipher;
 
-import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
-import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
+import java.security.GeneralSecurityException;
 import java.util.Arrays;
 
 public class AESCipherImpl implements AESCipher {
@@ -21,7 +20,7 @@ public class AESCipherImpl implements AESCipher {
     }
 
     @Override
-    public byte[] transform(byte[] input) throws IllegalBlockSizeException, BadPaddingException {
+    public byte[] transform(byte[] input) throws GeneralSecurityException {
         return aesCipher.doFinal(input);
     }
 

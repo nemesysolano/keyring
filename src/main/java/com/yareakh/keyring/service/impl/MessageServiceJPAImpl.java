@@ -5,15 +5,9 @@ import com.yareakh.keyring.model.Message;
 import com.yareakh.keyring.model.MessageState;
 import com.yareakh.keyring.model.Triplet;
 import com.yareakh.keyring.repository.MessageRepository;
-import com.yareakh.keyring.service.BaseService;
-import com.yareakh.keyring.service.MessageService;
-import com.yareakh.keyring.service.KeyPairService;
-import com.yareakh.keyring.service.CryptoService;
-import com.yareakh.keyring.service.RSACipher;
-import com.yareakh.keyring.service.AESCipher;
-import com.yareakh.keyring.service.ServiceException;
-import com.yareakh.keyring.service.MessageServiceException;
+import com.yareakh.keyring.service.*;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 
 import java.security.GeneralSecurityException;
@@ -113,6 +107,12 @@ public class MessageServiceJPAImpl implements MessageService {
                     cause,
                     MessageServiceException.UNHANDLED_CRYPTO_EXCEPTION
             );
+        } catch (DataAccessException cause) {
+            throw new MessageServiceException(
+                    "Can't persist new message",
+                    cause,
+                    MessageServiceException.DATA_ACCESS_PROBLEM
+            );
         }
     }
 
@@ -208,7 +208,7 @@ public class MessageServiceJPAImpl implements MessageService {
         Message message = messageRepository.findById(id).orElseThrow( () ->
                 new MessageServiceException(
                         String.format("Can't retrieve content from an non-existing message %s", id),
-                        ServiceException.ENTITY_NOT_FOUND
+                        MessageServiceException.ENTITY_NOT_FOUND
                 )
         );
         KeyPair end = keyPairService.findOrFail(Objects.requireNonNull(message.end).id);
