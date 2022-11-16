@@ -3,3 +3,7 @@ https://blog.devgenius.io/spring-boot-security-configuration-practically-explain
 https://blog.devgenius.io/spring-boot-security-configuration-practically-explained-part3-ldap-bind-authentication-5fc318a09aeb
 https://www.javainuse.com/spring/jwt
 https://www.baeldung.com/spring-boot-security-autoconfiguration
+https://www.techgeeknext.com/spring/spring-boot-security-token-authentication-jwt-mysql
+https://www.codejava.net/frameworks/spring-boot/spring-security-jwt-role-based-authorization
+
+echo -n Justice4a11# | sha256sum

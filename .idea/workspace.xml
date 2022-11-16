@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61cdfff8-9843-4019-95ce-580debee34c0" name="Changes" comment="Fully covered MessageService">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/VersionInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/dto/VersionInfoResponse.java" afterDir="false" />
+    <list default="true" id="61cdfff8-9843-4019-95ce-580debee34c0" name="Changes" comment="Added admin user">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0011___INSERT_ADMIN.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scratchpad.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scratchpad.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/ErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/ErrorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/ErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/SignUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/AuthenticationException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/CryptoServiceException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/WrappedCheckedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/WrappedCheckedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/AuthenticationServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/CryptoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/CryptoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/controller/BaseControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/controller/BaseControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/controller/RegistrationControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/controller/SignUpControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +103,7 @@
       <recent name="com.yareakh.keyring.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.com.yareakh.keyring.service in keyring">
+  <component name="RunManager" selected="JUnit.SignUpControllerTest">
     <configuration name="BaseServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="keyring" />
       <extension name="coverage">
@@ -293,9 +278,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SignUpControllerTest" />
         <item itemvalue="JUnit.com.yareakh.keyring.service in keyring" />
         <item itemvalue="JUnit.SecurityConfigurationTest" />
-        <item itemvalue="JUnit.SignUpControllerTest" />
         <item itemvalue="JUnit.BaseServiceTest" />
         <item itemvalue="JUnit.MessageServiceResilienceTest" />
       </list>
@@ -340,7 +325,7 @@
       <workItem from="1668449230150" duration="11939000" />
       <workItem from="1668523902799" duration="30387000" />
       <workItem from="1668568635972" duration="29000" />
-      <workItem from="1668606696419" duration="2955000" />
+      <workItem from="1668606696419" duration="4944000" />
     </task>
     <task id="LOCAL-00001" summary="Changed return type to Triplet">
       <created>1667233943154</created>
@@ -419,7 +404,8 @@
     <MESSAGE value="Changed return type to Triplet" />
     <MESSAGE value="Done with validation tests." />
     <MESSAGE value="Fully covered MessageService" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fully covered MessageService" />
+    <MESSAGE value="Added admin user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added admin user" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
