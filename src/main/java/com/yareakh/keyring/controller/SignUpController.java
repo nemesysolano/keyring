@@ -8,10 +8,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
+
 /**
  * <p>For security reasons, this controller must handle signup requests only.</p>
  */
-@Controller
+@RestController
 @RequestMapping("signup")
 @CrossOrigin(origins = "*", maxAge=3600, methods={
         RequestMethod.GET,
@@ -41,14 +43,16 @@ public class SignUpController {
      * @return The response object containing the unique id (integer) for the new key pair.
      */
     @PostMapping
-    public ResponseEntity<SignupResponse> signup(@RequestBody SignupRequest request) {
+    @ResponseStatus(HttpStatus.CREATED)
+    public SignupResponse signup(
+            @RequestBody SignupRequest request
+    ) {
         Long id = keyPairService.create(
                 KeyPair.builder()
                         .name(request.name)
                         .password(request.password)
                         .build()
         );
-
-        return ResponseEntity.status(HttpStatus.CREATED).body(SignupResponse.builder().id(id).build());
+        return SignupResponse.builder().id(id).build();
     }
 }

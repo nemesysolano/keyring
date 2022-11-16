@@ -33,4 +33,9 @@ public class ErrorResponse {
      *
      */
     public final String cause;
+
+    /**
+     *
+     */
+    public final String contextPath;
 }

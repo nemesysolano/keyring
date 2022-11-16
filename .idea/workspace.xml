@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61cdfff8-9843-4019-95ce-580debee34c0" name="Changes" comment="Fully covered MessageService">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/MockDataAccessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/MessageServiceResilienceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/VersionInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/dto/VersionInfoResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/AESCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/AESCipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/MessageServiceException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/RSACipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/RSACipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/AESCipherImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/AESCipherImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratchpad.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scratchpad.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/ErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/ErrorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/controller/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/AuthenticationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/CryptoServiceException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/WrappedCheckedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/WrappedCheckedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/AuthenticationServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/CryptoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/CryptoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/MessageServiceJPAImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/RSACipherImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/impl/RSACipherImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/controller/BaseControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/controller/BaseControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/controller/RegistrationControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yareakh/keyring/controller/SignUpControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +38,7 @@
       <list>
         <option value="Kotlin Enum" />
         <option value="Interface" />
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -68,6 +77,10 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;d2c899bd-05d1-4321-9109-38452f20f49a&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -100,28 +113,13 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yareakh.keyring.config" />
       <recent name="com.yareakh.keyring.controller" />
       <recent name="com.yareakh.keyring.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in keyring">
-    <configuration name="All in keyring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="keyring" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <envs>
-        <env name="YAREAKH_DB_USER" value="localdb" />
-        <env name="YAREAKH_DB_URL" value="jdbc:postgresql://localhost:5432/localdb" />
-        <env name="YAREAKH_DB_SHOWQSQL" value="false" />
-        <env name="YAREAKH_DB_PASSWORD" value="vasorange#1" />
-      </envs>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CryptoServiceResilienceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.com.yareakh.keyring.service in keyring">
+    <configuration name="BaseServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="keyring" />
       <extension name="coverage">
         <pattern>
@@ -130,53 +128,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.yareakh.keyring.service" />
-      <option name="MAIN_CLASS_NAME" value="com.yareakh.keyring.service.CryptoServiceResilienceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.yareakh.keyring.service.BaseServiceTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
-      <envs>
-        <env name="YAREAKH_DB_USER" value="localdb" />
-        <env name="YAREAKH_DB_URL" value="jdbc:postgresql://localhost:5432/localdb" />
-        <env name="YAREAKH_DB_SHOWQSQL" value="false" />
-        <env name="YAREAKH_DB_PASSWORD" value="vasorange#1" />
-      </envs>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KeyPairServiceResilienceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="keyring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yareakh.keyring.stubs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yareakh.keyring.service" />
-      <option name="MAIN_CLASS_NAME" value="com.yareakh.keyring.service.KeyPairServiceResilienceTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <envs>
-        <env name="YAREAKH_DB_USER" value="localdb" />
-        <env name="YAREAKH_DB_URL" value="jdbc:postgresql://localhost:5432/localdb" />
-        <env name="YAREAKH_DB_SHOWQSQL" value="false" />
-        <env name="YAREAKH_DB_PASSWORD" value="vasorange#1" />
-      </envs>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KeyPairServiceResilienceTest.testCatchDataAccessException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="keyring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yareakh.keyring.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yareakh.keyring.service" />
-      <option name="MAIN_CLASS_NAME" value="com.yareakh.keyring.service.KeyPairServiceResilienceTest" />
-      <option name="METHOD_NAME" value="testCatchDataAccessException" />
-      <option name="TEST_OBJECT" value="method" />
       <envs>
         <env name="YAREAKH_DB_USER" value="localdb" />
         <env name="YAREAKH_DB_URL" value="jdbc:postgresql://localhost:5432/localdb" />
@@ -199,6 +153,66 @@
       <option name="MAIN_CLASS_NAME" value="com.yareakh.keyring.service.MessageServiceResilienceTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="YAREAKH_DB_USER" value="localdb" />
+        <env name="YAREAKH_DB_URL" value="jdbc:postgresql://localhost:5432/localdb" />
+        <env name="YAREAKH_DB_SHOWQSQL" value="false" />
+        <env name="YAREAKH_DB_PASSWORD" value="vasorange#1" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityConfigurationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="keyring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yareakh.keyring.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yareakh.keyring.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.yareakh.keyring.controller.SecurityConfigurationTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="YAREAKH_DB_USER" value="localdb" />
+        <env name="YAREAKH_DB_URL" value="jdbc:postgresql://localhost:5432/localdb" />
+        <env name="YAREAKH_DB_SHOWQSQL" value="false" />
+        <env name="YAREAKH_DB_PASSWORD" value="vasorange#1" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="keyring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yareakh.keyring.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yareakh.keyring.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.yareakh.keyring.controller.SignUpControllerTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="YAREAKH_DB_USER" value="localdb" />
+        <env name="YAREAKH_DB_URL" value="jdbc:postgresql://localhost:5432/localdb" />
+        <env name="YAREAKH_DB_SHOWQSQL" value="false" />
+        <env name="YAREAKH_DB_PASSWORD" value="vasorange#1" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.yareakh.keyring.service in keyring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="keyring" />
+      <option name="PACKAGE_NAME" value="com.yareakh.keyring.service" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <envs>
         <env name="YAREAKH_DB_USER" value="localdb" />
         <env name="YAREAKH_DB_URL" value="jdbc:postgresql://localhost:5432/localdb" />
@@ -255,6 +269,13 @@
       <method v="2" />
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <envs>
+        <env name="YAREAKH_DB_USER" value="localdb" />
+        <env name="YAREAKH_DB_URL" value="jdbc:postgresql://localhost:5432/localdb" />
+        <env name="YAREAKH_DB_SHOWQSQL" value="false" />
+        <env name="YAREAKH_DB_PASSWORD" value="vasorange#1" />
+      </envs>
       <module name="keyring" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yareakh.keyring.Main" />
       <method v="2">
@@ -262,21 +283,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.SecurityConfigurationTest" />
+      <item itemvalue="JUnit.SignUpControllerTest" />
+      <item itemvalue="JUnit.BaseServiceTest" />
       <item itemvalue="JUnit.MessageServiceResilienceTest" />
-      <item itemvalue="JUnit.CryptoServiceResilienceTest" />
-      <item itemvalue="JUnit.KeyPairServiceResilienceTest.testCatchDataAccessException" />
-      <item itemvalue="JUnit.KeyPairServiceResilienceTest" />
-      <item itemvalue="JUnit.All in keyring" />
+      <item itemvalue="JUnit.com.yareakh.keyring.service in keyring" />
       <item itemvalue="Maven.keyring [spring-boot:run]" />
       <item itemvalue="Spring Boot.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in keyring" />
+        <item itemvalue="JUnit.com.yareakh.keyring.service in keyring" />
+        <item itemvalue="JUnit.SecurityConfigurationTest" />
+        <item itemvalue="JUnit.SignUpControllerTest" />
+        <item itemvalue="JUnit.BaseServiceTest" />
         <item itemvalue="JUnit.MessageServiceResilienceTest" />
-        <item itemvalue="JUnit.CryptoServiceResilienceTest" />
-        <item itemvalue="JUnit.KeyPairServiceResilienceTest" />
-        <item itemvalue="JUnit.KeyPairServiceResilienceTest.testCatchDataAccessException" />
       </list>
     </recent_temporary>
   </component>
@@ -317,7 +338,9 @@
       <workItem from="1668343053179" duration="11714000" />
       <workItem from="1668363223430" duration="1144000" />
       <workItem from="1668449230150" duration="11939000" />
-      <workItem from="1668523902799" duration="8428000" />
+      <workItem from="1668523902799" duration="30387000" />
+      <workItem from="1668568635972" duration="29000" />
+      <workItem from="1668606696419" duration="2955000" />
     </task>
     <task id="LOCAL-00001" summary="Changed return type to Triplet">
       <created>1667233943154</created>
@@ -361,7 +384,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667789376994</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fully covered MessageService">
+      <created>1668533028921</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668533028921</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fully covered MessageService">
+      <created>1668533036521</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668533036521</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,6 +454,16 @@
           <line>147</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/yareakh/keyring/service/BaseService.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/yareakh/keyring/service/BaseServiceTest.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -425,9 +472,10 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/keyring$com_yareakh_keyring_service_in_keyring.ic" NAME="com.yareakh.keyring.service in keyring Coverage Results" MODIFIED="1668535036225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/keyring$KeyPairServiceTest.ic" NAME="KeyPairServiceTest Coverage Results" MODIFIED="1666325695309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.yareakh.keyring.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/keyring$All_in_keyring.ic" NAME="All in keyring Coverage Results" MODIFIED="1668532689975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/keyring$All_in_keyring.ic" NAME="All in keyring Coverage Results" MODIFIED="1668534633220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

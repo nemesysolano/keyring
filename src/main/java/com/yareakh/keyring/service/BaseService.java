@@ -9,14 +9,14 @@ public class BaseService {
     /**
      * &quot;&quot;
      */
-    static String EMPTY_STRING = StringUtils.EMPTY;
+    public static String EMPTY_STRING = StringUtils.EMPTY;
 
     /**
      * <p>Safe to string method.</p>
      * @param value Any type
      * @return <code>value == null ? EMPTY_STRING : value.toString().trim()</code>
      */
-    public static String toString(Object value) {
+    public final static String toString(Object value) {
         if(value == null) {
             return EMPTY_STRING;
         } else {

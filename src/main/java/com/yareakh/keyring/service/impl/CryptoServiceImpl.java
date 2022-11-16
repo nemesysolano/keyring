@@ -27,6 +27,7 @@ public class CryptoServiceImpl implements CryptoService {
     /**
      *
      * @param keyFactoryStub stub for <code>java.security.KeyFactory</code>
+     * @param cipherStub stub for <code>java.security.Cipher</code>
      */
     public CryptoServiceImpl(KeyFactoryStub keyFactoryStub, CipherStub cipherStub) {
         this.keyFactoryStub = keyFactoryStub;

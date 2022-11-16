@@ -2,3 +2,4 @@ https://blog.devgenius.io/spring-boot-security-configuration-practically-explain
 https://blog.devgenius.io/spring-boot-security-configuration-practically-explained-part2-jdbc-authentication-6c0c7bd8d53e
 https://blog.devgenius.io/spring-boot-security-configuration-practically-explained-part3-ldap-bind-authentication-5fc318a09aeb
 https://www.javainuse.com/spring/jwt
+https://www.baeldung.com/spring-boot-security-autoconfiguration

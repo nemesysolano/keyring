@@ -14,11 +14,5 @@ public class WrappedCheckedException extends RuntimeException{
         super(message, cause);
     }
 
-    /**
-     *
-     *  the cause (which is saved for later retrieval by the Throwable.getCause() method). (A null value is permitted, and indicates that the cause is nonexistent or unknown.)@param cause
-     */
-    public WrappedCheckedException(Exception cause) {
-        super(cause.getMessage(), cause);
-    }
+
 }

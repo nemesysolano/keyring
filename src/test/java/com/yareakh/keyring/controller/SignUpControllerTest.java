@@ -14,7 +14,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import static org.junit.jupiter.api.Assertions.*;
 
 @Slf4j
-class RegistrationControllerTest extends BaseControllerTest {
+class SignUpControllerTest extends BaseControllerTest {
 
     @Autowired
     KeyPairRepository keyPairRepository;

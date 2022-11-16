@@ -1,6 +1,5 @@
 package com.yareakh.keyring.controller;
 
-import com.yareakh.keyring.service.AuthenticationException;
 import com.yareakh.keyring.service.KeyPairServiceException;
 import com.yareakh.keyring.service.MessageServiceException;
 import lombok.extern.slf4j.Slf4j;
@@ -15,16 +14,16 @@ import org.springframework.web.context.request.WebRequest;
 public class ErrorController {
     @ExceptionHandler(value = {KeyPairServiceException.class})
     public ResponseEntity<ErrorResponse> onKeyServiceException(KeyPairServiceException cause, WebRequest request) {
-
         ErrorResponse response = ErrorResponse
                 .builder()
                 .code(cause.getCode())
                 .message(cause.getMessage())
+                .contextPath(request.getContextPath())
                 .cause(cause.getClass().getSimpleName())
                 .build();
 
         log.error("ErrorController.onKeyServiceException", cause);
-        return new ResponseEntity<ErrorResponse>(
+        return new ResponseEntity<>(
                 response,
                 cause.getCode() ==  KeyPairServiceException.UNHANDLED_CRYPTO_EXCEPTION ?
                         HttpStatus.INTERNAL_SERVER_ERROR :
@@ -39,11 +38,12 @@ public class ErrorController {
                 .builder()
                 .code(cause.getCode())
                 .message(cause.getMessage())
+                .contextPath(request.getContextPath())
                 .cause(cause.getClass().getSimpleName())
                 .build();
 
         log.error("ErrorController.onMessageServiceException", cause);
-        return new ResponseEntity<ErrorResponse>(
+        return new ResponseEntity<>(
                 response,
                 cause.getCode() ==  MessageServiceException.UNHANDLED_CRYPTO_EXCEPTION ?
                         HttpStatus.INTERNAL_SERVER_ERROR :
@@ -51,21 +51,5 @@ public class ErrorController {
         );
     }
 
-    @ExceptionHandler(value = {AuthenticationException.class})
-    public ResponseEntity<ErrorResponse> onAuthenticationException(AuthenticationException cause, WebRequest request) {
-
-        ErrorResponse response = ErrorResponse
-                .builder()
-                .code(cause.getCode())
-                .message(cause.getMessage())
-                .cause(cause.getClass().getSimpleName())
-                .build();
-
-        log.error("ErrorController.AuthenticationException", cause);
-        return new ResponseEntity<ErrorResponse>(
-                response,
-                HttpStatus.BAD_REQUEST
-        );
-    }
 
 }
