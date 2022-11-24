@@ -2,10 +2,7 @@ package com.yareakh.keyring.service.impl;
 
 import com.yareakh.keyring.model.KeyPair;
 import com.yareakh.keyring.repository.KeyPairRepository;
-import com.yareakh.keyring.service.BaseService;
-import com.yareakh.keyring.service.KeyPairService;
-import com.yareakh.keyring.service.KeyPairServiceException;
-import com.yareakh.keyring.service.WrappedCheckedException;
+import com.yareakh.keyring.service.*;
 import com.yareakh.keyring.stubs.KeyPairGeneratorStub;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
@@ -74,7 +71,7 @@ public class KeyPairServiceJPAImpl implements KeyPairService {
                             .privateKey(privateKey)
                             .publicKey(publicKey)
                             .name(name)
-                            .password(password)
+                            .password(CryptoService.encryptPassword(password))
                             .build()
             );
 

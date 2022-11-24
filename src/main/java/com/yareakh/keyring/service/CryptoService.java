@@ -1,11 +1,9 @@
 package com.yareakh.keyring.service;
 
-import javax.crypto.NoSuchPaddingException;
-import java.security.GeneralSecurityException;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
+
+import org.apache.commons.lang3.RandomStringUtils;
+import org.springframework.security.crypto.bcrypt.BCrypt;
+
 
 /**
  * This interface contain shorthand methods that create crypto objects.
@@ -53,4 +51,18 @@ public interface CryptoService {
      * @throws WrappedCheckedException .-
      */
     AESCipher createAESCipherForDecryption(byte[] aesKeyData, byte[] ivData) throws WrappedCheckedException;
+
+
+    /**
+     *
+     * @param password Non null/empty character string
+     * @return Encrypted password
+     */
+    static String encryptPassword(String password) {
+        return BCrypt.hashpw(password, BCrypt.gensalt(4));
+    }
+
+    static boolean matchPassword(String encoded, String raw) {
+        return BCrypt.checkpw(raw, encoded);
+    }
 }

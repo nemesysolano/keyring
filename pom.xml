@@ -230,16 +230,16 @@
     <build>
         <finalName>yareakh-keyring</finalName>
         <plugins>
-
             <plugin>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+           f     <artifactId>spring-boot-maven-plugin</artifactId>
                 <executions>
                     <execution>
                         <goals>
                             <goal>repackage</goal>
                         </goals>
                         <configuration>
+                            <classifier>spring-boot</classifier>
                             <mainClass>com.yareakh.keyring.Main</mainClass>
                         </configuration>
                     </execution>
